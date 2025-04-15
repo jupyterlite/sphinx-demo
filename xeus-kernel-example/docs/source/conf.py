@@ -19,10 +19,15 @@ extensions = ["myst_parser", "jupyterlite_sphinx"]
 templates_path = ["_templates"]
 exclude_patterns = []
 
-# A list of glob patterns relative to the source directory that match files and directories
-# to include as a part of the embedded JupyterLite site.
+# -- Options for jupyterlite-sphinx ------------------------------------------
+
+# A list of glob patterns relative to the source directory that match file
+#  and directories to include as a part of the embedded JupyterLite site.
 jupyterlite_contents = ["custom_contents/*"]
-jupyterlite_silence = False
+
+# Set this to False to unsilence the verbose output of the JupyterLite build
+# process. This is useful for debugging.
+jupyterlite_silence = True
 
 
 # -- Options for HTML output -------------------------------------------------
