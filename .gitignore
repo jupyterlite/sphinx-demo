@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# JupyterLite deployment files
+.jupyterlite.doit.db
+pyodide-kernel-example/docs/source/_contents/
+xeus-kernel-example/docs/source/_contents/
