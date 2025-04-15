@@ -15,6 +15,10 @@ concurrency:
 
 permissions: {}
 
+env:
+  FORCE_COLOR: 3
+  SPHINXOPTS: "-W --keep-going -j auto -D jupyterlite_silence=1"
+
 jobs:
   build-sites:
     name: Build Sphinx ${{ matrix.site[0] }} site
