@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy
 
 on:
   push:
@@ -14,6 +14,10 @@ concurrency:
   cancel-in-progress: true
 
 permissions: {}
+
+env:
+  FORCE_COLOR: 3
+  SPHINXOPTS: "-W --keep-going -j auto -D jupyterlite_silence=0"
 
 jobs:
   build-sites:

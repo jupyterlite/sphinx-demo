@@ -14,7 +14,6 @@ channels:
 dependencies:
   - pandas
   - matplotlib
-  - bqplot
   # While we include the Python kernel here, it is also possible to install other kernels
   # for other languages, such as JavaScript, R, Lua, and so on; see:
   # https://jupyterlite-xeus.readthedocs.io/en/stable/#xeus-kernels-in-jupyterlite

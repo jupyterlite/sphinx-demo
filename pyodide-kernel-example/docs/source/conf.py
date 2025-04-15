@@ -14,19 +14,31 @@ release = "1.0.0"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser", "jupyterlite_sphinx"]
+extensions = ["myst_nb", "jupyterlite_sphinx"]
 
 templates_path = ["_templates"]
 exclude_patterns = []
 
-# A list of glob patterns relative to the source directory that match files and directories
-# to include as a part of the embedded JupyterLite site.
-jupyterlite_contents = ["custom_contents/*"]
-jupyterlite_silence = False
+# -- Options for jupyterlite-sphinx ------------------------------------------
 
+# A list of glob patterns relative to the source directory that match file
+#  and directories to include as a part of the embedded JupyterLite site.
+jupyterlite_contents = ["custom_contents/*"]
+
+# Set this to False to unsilence the verbose output of the JupyterLite build
+# process. This is useful for debugging.
+jupyterlite_silence = True
+
+# Strip out the JupyterLite contents from the output HTML files
+strip_tagged_cells = True
+
+# -- Options for MyST-NB -----------------------------------------------------
+
+nb_execution_mode = "auto"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "pydata_sphinx_theme"
+html_logo = "_static/icon.svg"
 html_static_path = ["_static"]

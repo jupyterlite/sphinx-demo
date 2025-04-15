@@ -11,5 +11,7 @@ documentation for details.
 
 ```{toctree}
 :caption: 'Contents:'
-:maxdepth: 2
+:maxdepth: 1
+
+custom_contents/matplotlib_demo.md
 ```

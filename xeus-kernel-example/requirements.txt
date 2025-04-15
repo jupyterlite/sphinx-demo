@@ -13,4 +13,7 @@ sphinx
 pydata-sphinx-theme
 
 # For using MyST Markdown for pages in the documentation
-myst-parser
+myst-nb
+
+# Dependencies we require for notebook execution
+matplotlib
