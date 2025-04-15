@@ -17,7 +17,7 @@ This directive is used to include a JupyterLite notebook in the documentation us
 the Notebook interface. We'll use the "new tab" option to create a button that will
 open the JupyterLite deployment with it, and customise the button text.
 
-If the strip_tagged_cells configuration option is set in conf.py, ny cell that is
+If the strip_tagged_cells configuration option is set in conf.py, any cell that is
 wrapped in the `jupyterlite_sphinx_strip` tag will be stripped from the final output,
 so that it won't be included in the JupyterLite deployment.
 -->
