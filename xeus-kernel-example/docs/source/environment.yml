@@ -1,0 +1,21 @@
+# The name of the environment that is set up during the docs build process.
+# This doesn't matter much, as the environment is not used for anything
+# other than the installation of the packages that have been listed here.
+name: jupyterlite-wasm-env
+channels:
+  # The emscripten-forge channel is used for wasm32-unknown-emscripten packages, which
+  # are loaded by the xeus-python kernel.
+  - https://repo.mamba.pm/emscripten-forge
+  # The conda-forge channel is used to provide the xeus-python kernel and its dependencies.
+  - conda-forge
+# These dependencies are pre-installed in the environment and are loaded when the xeus-python
+# kernel is instantiated when running a JupyterLite site.
+# It is not possible to install these dependencies using pip.
+dependencies:
+  - pandas
+  - matplotlib
+  - bqplot
+  # While we include the Python kernel here, it is also possible to install other kernels
+  # for other languages, such as JavaScript, R, Lua, and so on; see:
+  # https://jupyterlite-xeus.readthedocs.io/en/stable/#xeus-kernels-in-jupyterlite
+  - xeus-python
