@@ -23,8 +23,8 @@ so that it won't be included in the JupyterLite deployment.
 
 ```{eval-rst}
 .. notebooklite:: matplotlib_demo.md
-    :new-tab: True
-    :new-tab-button-text: Try it online!
+    :new_tab: True
+    :new_tab_button_text: Try it online!
 ```
 
 +++
