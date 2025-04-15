@@ -1,0 +1,16 @@
+
+# jupyterlite-sphinx brings jupyterlite-core and JupyterLite-specific dependencies.
+jupyterlite-sphinx
+
+# The Xeus kernel is a loader for various JupyterLite-compatible kernels for several
+# languages. Kernels and additional dependencies are loaded from an environment.yml
+# file, which is included in the docs/ folder. See https://jupyterlite-xeus.readthedocs.io/en/stable/
+# for more information.
+jupyterlite-xeus
+
+# The Sphinx documentation framework and our theme of choice: the PyData Sphinx Theme
+sphinx
+pydata-sphinx-theme
+
+# For using MyST Markdown for pages in the documentation
+myst-parser

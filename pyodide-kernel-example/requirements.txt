@@ -1,0 +1,15 @@
+
+# jupyterlite-sphinx brings jupyterlite-core and JupyterLite-specific dependencies.
+jupyterlite-sphinx
+
+# The Pyodide kernel version controls the Pyodide version as a part of the interactive
+# documentation deployment. Please refer to the Compatibility section at
+# https://jupyterlite-pyodide-kernel.readthedocs.io/en/latest/#compatibility.
+jupyterlite-pyodide-kernel==0.5.2
+
+# The Sphinx documentation framework and our theme of choice: the PyData Sphinx Theme
+sphinx
+pydata-sphinx-theme
+
+# For using MyST Markdown for pages in the documentation
+myst-parser
