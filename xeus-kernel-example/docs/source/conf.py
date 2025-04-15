@@ -14,7 +14,7 @@ release = "1.0.0"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser", "jupyterlite_sphinx"]
+extensions = ["myst_nb", "jupyterlite_sphinx"]
 
 templates_path = ["_templates"]
 exclude_patterns = []
@@ -29,6 +29,12 @@ jupyterlite_contents = ["custom_contents/*"]
 # process. This is useful for debugging.
 jupyterlite_silence = True
 
+# Strip out the JupyterLite contents from the output HTML files
+strip_tagged_cells = True
+
+# -- Options for MyST-NB -----------------------------------------------------
+
+nb_execution_mode = "auto"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
