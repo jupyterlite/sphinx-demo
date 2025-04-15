@@ -114,13 +114,6 @@
             "filename": "matplotlib-inline-0.1.7-pyhd8ed1ab_1.tar.gz"
         },
         {
-            "name": "bqplot",
-            "version": "0.12.43",
-            "build": "pyhd8ed1ab_1",
-            "filename_stem": "bqplot-0.12.43-pyhd8ed1ab_1",
-            "filename": "bqplot-0.12.43-pyhd8ed1ab_1.tar.gz"
-        },
-        {
             "name": "ptyprocess",
             "version": "0.7.0",
             "build": "pyhd8ed1ab_1",
@@ -140,13 +133,6 @@
             "build": "pyhd8ed1ab_1",
             "filename_stem": "pyparsing-3.2.3-pyhd8ed1ab_1",
             "filename": "pyparsing-3.2.3-pyhd8ed1ab_1.tar.gz"
-        },
-        {
-            "name": "jupyterlab_widgets",
-            "version": "3.0.14",
-            "build": "pyhd8ed1ab_0",
-            "filename_stem": "jupyterlab_widgets-3.0.14-pyhd8ed1ab_0",
-            "filename": "jupyterlab_widgets-3.0.14-pyhd8ed1ab_0.tar.gz"
         },
         {
             "name": "decorator",
@@ -170,13 +156,6 @@
             "filename": "xeus-python-shell-raw-0.6.4-pyhd8ed1ab_0.tar.gz"
         },
         {
-            "name": "traittypes",
-            "version": "0.2.1",
-            "build": "pyh9f0ad1d_2",
-            "filename_stem": "traittypes-0.2.1-pyh9f0ad1d_2",
-            "filename": "traittypes-0.2.1-pyh9f0ad1d_2.tar.gz"
-        },
-        {
             "name": "pexpect",
             "version": "4.9.0",
             "build": "pyhd8ed1ab_1",
@@ -189,13 +168,6 @@
             "build": "np125py311he285654_0",
             "filename_stem": "pandas-2.2.3-np125py311he285654_0",
             "filename": "pandas-2.2.3-np125py311he285654_0.tar.gz"
-        },
-        {
-            "name": "comm",
-            "version": "0.2.2",
-            "build": "pyhd8ed1ab_1",
-            "filename_stem": "comm-0.2.2-pyhd8ed1ab_1",
-            "filename": "comm-0.2.2-pyhd8ed1ab_1.tar.gz"
         },
         {
             "name": "executing",
@@ -275,13 +247,6 @@
             "filename": "cycler-0.12.1-pyhd8ed1ab_1.tar.gz"
         },
         {
-            "name": "ipywidgets",
-            "version": "8.1.6",
-            "build": "pyhd8ed1ab_0",
-            "filename_stem": "ipywidgets-8.1.6-pyhd8ed1ab_0",
-            "filename": "ipywidgets-8.1.6-pyhd8ed1ab_0.tar.gz"
-        },
-        {
             "name": "python-tzdata",
             "version": "2025.2",
             "build": "pyhd8ed1ab_0",
@@ -294,13 +259,6 @@
             "build": "pyhd8ed1ab_1004",
             "filename_stem": "pickleshare-0.7.5-pyhd8ed1ab_1004",
             "filename": "pickleshare-0.7.5-pyhd8ed1ab_1004.tar.gz"
-        },
-        {
-            "name": "widgetsnbextension",
-            "version": "4.0.14",
-            "build": "pyhd8ed1ab_0",
-            "filename_stem": "widgetsnbextension-4.0.14-pyhd8ed1ab_0",
-            "filename": "widgetsnbextension-4.0.14-pyhd8ed1ab_0.tar.gz"
         },
         {
             "name": "python",

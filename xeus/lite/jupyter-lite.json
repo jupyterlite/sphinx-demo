@@ -9,21 +9,9 @@
     "federated_extensions": [
       {
         "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.4e1d614fd8228ac83ba6.js",
-        "name": "@jupyter-widgets/jupyterlab-manager"
-      },
-      {
-        "extension": "./extension",
         "liteExtension": true,
         "load": "static/remoteEntry.e2b9c75217019fc6ff81.js",
         "name": "@jupyterlite/xeus-extension"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.a36d13f475360b3d8988.js",
-        "name": "bqplot"
       },
       {
         "extension": "./extension",

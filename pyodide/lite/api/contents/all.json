@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2025-04-15T18:09:17.653574Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2025-04-15T18:09:15.595549Z",
+      "mimetype": null,
+      "name": "matplotlib_demo.ipynb",
+      "path": "matplotlib_demo.ipynb",
+      "size": 3873,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2025-04-15T18:09:17.653574Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2025-04-15T18:09:17.653574Z",
+  "mimetype": null,
+  "name": "",
+  "path": "",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
