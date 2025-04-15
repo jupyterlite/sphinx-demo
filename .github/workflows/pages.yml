@@ -17,7 +17,7 @@ permissions: {}
 
 env:
   FORCE_COLOR: 3
-  SPHINXOPTS: "-W --keep-going -j auto -D jupyterlite_silence=1"
+  SPHINXOPTS: "-W --keep-going -j auto -D jupyterlite_silence=0"
 
 jobs:
   build-sites:
