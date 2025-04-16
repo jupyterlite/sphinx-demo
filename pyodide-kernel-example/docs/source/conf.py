@@ -42,3 +42,4 @@ nb_execution_mode = "auto"
 html_theme = "pydata_sphinx_theme"
 html_logo = "_static/icon.svg"
 html_static_path = ["_static"]
+html_css_files = ["button_styling.css"]

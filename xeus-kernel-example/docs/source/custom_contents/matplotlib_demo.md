@@ -16,6 +16,13 @@ This directive is used to include a JupyterLite notebook in the documentation us
 the Notebook interface. We'll use the "new tab" option to create a button that will
 open the JupyterLite deployment with it, and customise the button text.
 
+The button does not contain a style by default. You may use CSS to style it as per
+your needs and requirements, according to the theme used. We describe it here:
+https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/try_examples.html#configuration
+
+For the purposes of this demo, we have provided a custom CSS file in the
+`docs/source/_static` directory, which is included in the Sphinx build process.
+
 If the strip_tagged_cells configuration option is set in conf.py, any cell that is
 wrapped in the `jupyterlite_sphinx_strip` tag will be stripped from the final output,
 so that it won't be included in the JupyterLite deployment.
@@ -28,7 +35,6 @@ so that it won't be included in the JupyterLite deployment.
 ```
 
 +++
-
 
 # Matplotlib interactive demo
 
