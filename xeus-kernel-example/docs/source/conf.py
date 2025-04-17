@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "my-example-sphinx-site"
+project = "jupyterlite-sphinx-demo"
 copyright = "2025, JupyterLite Contributors"
 author = "JupyterLite Contributors"
 release = "1.0.0"
