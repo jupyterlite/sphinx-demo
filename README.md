@@ -67,9 +67,9 @@ For information on how to select and configure a kernel, please refer to the ["A
 
 ### Websites that use `jupyterlite-sphinx`
 
-- [NumPy](https://numpy.org/devdocs/):
-- [SciPy](https://docs.scipy.org/doc/scipy/) many notebooks under [the `scipy.stats` module](https://scipy.github.io/devdocs/tutorial/stats.html) are interactive, and use the Pyodide kernel.
-- [scikit-learn](https://scikit-learn.org/stable/) uses [the Sphinx-Gallery extension](https://sphinx-gallery.github.io/stable/) to generate [a gallery of examples](scikit-learn.org/stable/auto_examples/), and uses the extension's [JupyterLite integration](https://sphinx-gallery.github.io/stable/configuration.html#jupyterlite) to make them interactive, which relies on `jupyterlite-sphinx` internally. While this is also an option that users may explore, it is not showcased within this demo.
+- [NumPy](https://numpy.org/devdocs/): many of the API examples in the "latest" documentation are interactive, and use the Pyodide kernel.
+- [SciPy](https://docs.scipy.org/doc/scipy/): notebooks under [the `scipy.stats` module](https://scipy.github.io/devdocs/tutorial/stats.html) are interactive, and use the Pyodide kernel.
+- [`scikit-learn`](https://scikit-learn.org/stable/): uses [the Sphinx-Gallery extension](https://sphinx-gallery.github.io/stable/) to generate [a gallery of examples](scikit-learn.org/stable/auto_examples/), and uses the extension's [JupyterLite integration](https://sphinx-gallery.github.io/stable/configuration.html#jupyterlite) to make them interactive, which relies on `jupyterlite-sphinx` internally. While this is also an option that users may explore, it is not showcased within this demo.
 
 ## License
 
