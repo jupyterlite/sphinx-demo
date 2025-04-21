@@ -40,9 +40,7 @@ so that it won't be included in the JupyterLite deployment.
 
 ## Plotting in JupyterLite
 
-Matplotlib can be installed in this deployment, as it provides the matplotlib federated extension.
-
-The packages used here are NumPy and `matplotlib`, which are available in [the emscripten-forge channel](https://beta.mamba.pm/channels/emscripten-forge).
+The packages used in this notebook are NumPy and `matplotlib`, which are available in [the emscripten-forge channel](https://beta.mamba.pm/channels/emscripten-forge).
 They are pre-installed into the deployment using the `ennvironment.yml` file in the docs source directory for the Xeus kernel to load. Once the kernel is started, the packages are available for use right away.
 
 Any extra packages must be pre-installed into the environment before the JupyterLite deployment is built as a part of the Sphinx build process.
@@ -106,7 +104,7 @@ plt.grid(True, axis='y')
 plt.show()
 ```
 
-### Plots which use Nested Buffers
+### Multiple line plots
 
 ```{code-cell}
 import numpy as np

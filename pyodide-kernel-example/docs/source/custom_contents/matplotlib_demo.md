@@ -41,7 +41,7 @@ so that it won't be included in the JupyterLite deployment.
 
 ## Plotting in JupyterLite
 
-The `jupyterlite-pyodide-kernel` can install packages in a cell based on `import <...>` statements, if the importable name of the package is the same as the package name in the Pyodide package index or on PyPI.
+The `jupyterlite-pyodide-kernel` can install packages in a cell based on `import <...>` statements, if the importable name of the package is the same as the package name in the Pyodide package index or on PyPI (and the package exists in either of them).
 
 Thus, the below example will work in this deployment, but you may also install any other package(s) on your own using a `import piplite; await piplite.install(["mypackage"])` statement, or, better, a `%pip install mypackage` cell magic.
 
@@ -104,7 +104,7 @@ plt.grid(True, axis='y')
 plt.show()
 ```
 
-### Multiple Line Plots
+### Multiple line plots
 
 ```{code-cell}
 import numpy as np
