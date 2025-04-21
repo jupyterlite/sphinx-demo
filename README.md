@@ -9,10 +9,10 @@ This repository showcases JupyterLite deployed as a static site on GitHub Pages,
 [xeus-badge]: https://jupyterlite.rtfd.io/en/latest/_static/badge.svg
 [xeus-url]: https://jupyterlite.github.io/sphinx-demo/xeus/
 
-| Kernel  |                         URL                         |
-| :------ | :-------------------------------------------------: |
-| Pyodide | [![lite-badge-pyodide][pyodide-badge]][pyodide-url] |
-| Xeus    |     [![lite-badge-xeus][xeus-badge]][xeus-url]      |
+| Kernel                                 |                         URL                         |
+| :------------------------------------- | :-------------------------------------------------: |
+| Pyodide (`jupyterlite-pyodide-kernel`) | [![lite-badge-pyodide][pyodide-badge]][pyodide-url] |
+| Xeus (`xeus-python` kernel)            |     [![lite-badge-xeus][xeus-badge]][xeus-url]      |
 
 ## 🗂️ Folder structure
 
