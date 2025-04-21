@@ -28,18 +28,44 @@ This repository is divided into two sections:
 
 Both examples use the [PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/en/stable/).
 
-Please check out to the README files under each folder to understand how to use and configure the JupyterLite deployment.
+Please check out the README files under each folder to understand the file structure and the use of configuration files in the JupyterLite deployment.
+
+## 📖 Walkthrough
+
+Here is an end-to-end guide to set up your own deployment to use JupyterLite and `jupyterlite-sphinx`:
+
+1. Install `jupyterlite-sphinx` and a kernel of your choice in your Python environment that is used to build the Sphinx documentation website. For example, you may install the Pyodide kernel with `pip install jupyterlite-sphinx jupyterlite-pyodide-kernel`. We recommend pinning the version of `jupyterlite-pyodide-kernel` as it controls the version of Pyodide that is used in the deployment.
+2. Configure `jupyterlite-sphinx` in your Sphinx documentation website in its `conf.py` file.
+3. Then, build the Sphinx documentation website with `make html` or `sphinx-build -b html . _build/html` (or the equivalent command for your Sphinx setup).
+4. To configure the look and feel of the buttons added by `jupyterlite-sphinx`, you may use a CSS file to style it. A sample has been provided in the `/_static/` folder for each example.
+5. Next, to configure the JupyterLite deployment further, you may use the `jupyter_lite_config.json`, `jupyter-lite.json`, and `overrides.json` files, and sample files have been provided in the example folders.
+6. Finally, you may deploy the JupyterLite deployment to a static site hosting service such as GitHub Pages or Read the Docs alongside your Sphinx documentation website, as the JupyterLite deployment is stored within a `lite/` subfolder of the Sphinx build output.
+
+Here is a diagram of the workflow:
+
+```mermaid
+flowchart TD
+    A[Start] --> B["Install jupyterlite-sphinx"]
+    B -->|"`pip install jupyterlite-sphinx`"| C{Choose a distribution to use and install a kernel}
+    C -->|The Pyodide distribution| D["`pip install jupyterlite-pyodide-kernel`"]
+    C -->|The emscripten-forge distribution| E["`pip install jupyterlite-xeus`"]
+    D --> F["Configure Sphinx site in conf.py"]
+    E --> G["Configure WASM environment using Xeus environment file"]
+    G --> F["Configure Sphinx site in conf.py"]
+    F --> I["(Optional) configure additional JupyterLite settings in jupyter_lite_config.json, jupyter-lite.json, and overrides.json"]
+    I --> J["Deploy site"]
+```
 
 ## Further information
 
-For information on how to use and configure JupyterLite and `jupyterlite-sphinx`, please refer to [the JupyterLite documentation](https://jupyterlite.readthedocs.io/) and [the `jupyterlite-sphinx` documentation](https://jupyterlite-sphinx.rtfd.io/) respectively.
+For information on how to use and configure JupyterLite and `jupyterlite-sphinx` further, please refer to [the JupyterLite documentation](https://jupyterlite.readthedocs.io/) and [the `jupyterlite-sphinx` documentation](https://jupyterlite-sphinx.rtfd.io/) respectively.
 
 - How-to guides: https://jupyterlite.readthedocs.io/en/stable/howto/index.html
 - Reference: https://jupyterlite.readthedocs.io/en/stable/reference/index.html
 
 For information on how to select and configure a kernel, please refer to the ["Adding kernels" section in the JupyterLite documentation](https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#choosing-a-kernel).
 
-### Popular websites that use `jupyterlite-sphinx`
+### Websites that use `jupyterlite-sphinx`
 
 - [NumPy](https://numpy.org/devdocs/):
 - [SciPy](https://docs.scipy.org/doc/scipy/) many notebooks under [the `scipy.stats` module](https://scipy.github.io/devdocs/tutorial/stats.html) are interactive, and use the Pyodide kernel.
