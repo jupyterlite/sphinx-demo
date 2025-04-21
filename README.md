@@ -1,6 +1,11 @@
 # `jupyterlite-sphinx-demo`
 
-This repository showcases JupyterLite deployed as a static site on GitHub Pages, as a part of a Sphinx site using [the `jupyterlite-sphinx` extension](https://jupyterlite-sphinx.rtfd.io), for demo purposes.
+This repository showcases JupyterLite deployed as a static site on GitHub Pages as a part of a [Sphinx](https://www.sphinx-doc.org/) site using [the `jupyterlite-sphinx` extension](https://jupyterlite-sphinx.rtfd.io) for demo purposes. It is meant to be used as a reference for documentation website authors who want to add interactive documentation elements to their Sphinx sites.
+
+For similar demos that deploy JupyterLite as a standalone site instead, please check out the following:
+
+- https://github.com/jupyterlite/demo for a deployment that uses the Pyodide kernel (`jupyterlite-pyodide-kernel`).
+- [the JupyterLite Xeus demo](https://github.com/jupyterlite/xeus-lite-demo/) for a deployment that uses the Xeus kernel (via `jupyterlite-xeus` and `xeus-python`).
 
 ## ✨ Try it in your browser ✨
 
@@ -31,8 +36,6 @@ For information on how to use and configure JupyterLite and `jupyterlite-sphinx`
 
 - How-to guides: https://jupyterlite.readthedocs.io/en/stable/howto/index.html
 - Reference: https://jupyterlite.readthedocs.io/en/stable/reference/index.html
-
-A similar demo for deploying JupyterLite as a standalone deployment exists at https://github.com/jupyterlite/demo, which provides the Pyodide kernel (`jupyterlite-pyodide-kernel`), the JavaScript kernel (`jupyterlite-javascript-kernel`), and the p5 kernel (`jupyterlite-p5-kernel`). For a deployment that uses the Xeus kernel (`jupyterlite-xeus`), check out https://github.com/jupyterlite/xeus-lite-demo.
 
 For information on how to select and configure a kernel, please refer to the ["Adding kernels" section in the JupyterLite documentation](https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#choosing-a-kernel).
 
