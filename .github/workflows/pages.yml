@@ -76,8 +76,10 @@ jobs:
         with:
           path: dist
 
-      - name: Move base index
-        run: mv index.html dist/index.html
+      - name: Move base index and version switcher JSON
+        run: |
+          mv index.html dist/index.html
+          mv switcher.json dist/switcher.json
 
       - name: Sanity check build artifacts
         run: tree dist

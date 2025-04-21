@@ -43,3 +43,26 @@ html_theme = "pydata_sphinx_theme"
 html_logo = "_static/icon.svg"
 html_static_path = ["_static"]
 html_css_files = ["button_styling.css"]
+
+# -- Options for the PyData Sphinx theme -------------------------------------
+
+html_theme_options = {
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/jupyterlite/sphinx-demo",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "PyPI",
+            "url": "https://pypi.org/project/jupyterlite-sphinx",
+            "icon": "fa-custom fa-pypi",
+        },
+    ],
+    "switcher": {
+        "json_url": "https://jupyterlite.github.io/sphinx-demo/switcher.json",
+        "version_match": "pyodide",
+    },
+    "navbar_end": ["version-switcher", "navbar-icon-links"],
+    "navbar_persistent": ["search-button"],
+}
