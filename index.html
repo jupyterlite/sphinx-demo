@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JupyterLite Sphinx Demo with Pyodide and Xeus kernels">
+    <link rel="icon" href="/pyodide/lite/lab/favicon.ico" type="image/x-icon">
+    <title>jupyterlite-sphinx-demo ✨ </title>
+    <style>
+        /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        main,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+
+        summary {
+            display: list-item
+        }
+
+        audio,
+        canvas,
+        progress,
+        video {
+            display: inline-block
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        template,
+        [hidden] {
+            display: none !important
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        a:active,
+        a:hover {
+            outline-width: 0
+        }
+
+        abbr[title] {
+            border-bottom: none;
+            text-decoration: underline;
+            text-decoration: underline dotted
+        }
+
+        b,
+        strong {
+            font-weight: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0
+        }
+
+        mark {
+            background-color: #ff0;
+            color: #000
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -0.25em
+        }
+
+        sup {
+            top: -0.5em
+        }
+
+        img {
+            border-style: none
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+            margin: 0
+        }
+
+        optgroup {
+            font-weight: bold
+        }
+
+        button,
+        input {
+            overflow: visible
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        html [type="button"],
+        [type="reset"],
+        [type="submit"] {
+            appearance: button;
+            -webkit-appearance: button;
+        }
+
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+            border-style: none;
+            padding: 0
+        }
+
+        button:-moz-focusring,
+        [type="button"]:-moz-focusring,
+        [type="reset"]:-moz-focusring,
+        [type="submit"]:-moz-focusring {
+            outline: 1px dotted ButtonText
+        }
+
+        fieldset {
+            border: 1px solid #c0c0c0;
+            margin: 0 2px;
+            padding: 0.35em 0.625em 0.75em
+        }
+
+        legend {
+            box-sizing: border-box;
+            color: inherit;
+            display: table;
+            max-width: 100%;
+            padding: 0;
+            white-space: normal
+        }
+
+        textarea {
+            overflow: auto
+        }
+
+        [type="checkbox"],
+        [type="radio"] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        [type="number"]::-webkit-inner-spin-button,
+        [type="number"]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type="search"] {
+            appearance: textfield;
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        [type="search"]::-webkit-search-cancel-button,
+        [type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-input-placeholder {
+            color: inherit;
+            opacity: 0.54
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        .container-lg {
+            max-width: 1012px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .px-3 {
+            padding-right: 16px !important;
+            padding-left: 16px !important;
+        }
+
+        .my-5 {
+            margin-top: 32px !important;
+            margin-bottom: 32px !important;
+        }
+
+        .markdown-body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin: 16px 0;
+            width: 100%;
+        }
+
+        table caption {
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        table th,
+        table td {
+            padding: 6px 13px;
+            border: 1px solid #dfe2e5;
+        }
+
+        table th {
+            font-weight: 600;
+        }
+
+        code {
+            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            background-color: rgba(27, 31, 35, 0.05);
+            border-radius: 3px;
+        }
+
+        a {
+            color: #0550ae;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* additional accessibility styles */
+        .skip-link:focus {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            width: auto;
+            height: auto;
+            padding: 8px;
+            background: #fff;
+            z-index: 9999;
+            border: 1px solid #0366d6;
+            overflow: visible;
+        }
+
+        *:focus {
+            outline: 2px solid #0366d6;
+            outline-offset: 2px;
+        }
+
+        /* improving color contrast */
+        body {
+            color: #24292e;
+        }
+
+        a {
+            color: #0550ae;
+        }
+
+        code {
+            background-color: rgba(27, 31, 35, 0.07);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#content" class="skip-link"
+        style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;">Skip to
+        content</a>
+    <main id="content" class="container-lg px-3 my-5 markdown-body">
+        <h1><a href="https://jupyterlite.github.io/sphinx-demo/"
+                aria-label="jupyterlite-sphinx-demo homepage">jupyterlite-sphinx-demo</a></h1>
+
+        <p><a href="https://github.com/jupyterlite/sphinx-demo" aria-label="Back to GitHub repository">↩️ Back to GitHub repository</a></p>
+
+        <h2 id="try-it-in-your-browser" tabindex="0">✨ Try it in your browser ✨</h2>
+
+        <table aria-label="JupyterLite kernels and their links">
+            <caption>Available JupyterLite kernels</caption>
+            <thead>
+                <tr>
+                    <th scope="col" style="text-align: left">Kernel</th>
+                    <th scope="col" style="text-align: center">URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: left">Pyodide (<code>jupyterlite-pyodide-kernel</code>)</td>
+                    <td style="text-align: center"><a href="https://jupyterlite.github.io/sphinx-demo/pyodide/"
+                            aria-label="Try the Pyodide kernel"><img
+                                src="https://jupyterlite.rtfd.io/en/latest/_static/badge.svg"
+                                alt="JupyterLite Pyodide kernel badge" /></a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left">Xeus (<code>xeus-python</code> kernel)</td>
+                    <td style="text-align: center"><a href="https://jupyterlite.github.io/sphinx-demo/xeus/"
+                            aria-label="Try the Xeus kernel"><img
+                                src="https://jupyterlite.rtfd.io/en/latest/_static/badge.svg"
+                                alt="JupyterLite Xeus kernel badge" /></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
