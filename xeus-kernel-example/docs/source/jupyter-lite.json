@@ -1,0 +1,10 @@
+{
+  "jupyter-lite-schema-version": 0,
+  "jupyter-config-data": {
+    "appName": "jupyterlite-sphinx-demo (Xeus)",
+    "defaultKernelName": "XPython",
+    "faviconUrl": "./lab/favicon.ico",
+    "contentsStorageName": "jupyterlite-sphinx-demo (Xeus)",
+    "settingsStorageName": "jupyterlite-sphinx-demo (Xeus)"
+  }
+}
