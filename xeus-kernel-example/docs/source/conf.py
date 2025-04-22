@@ -65,6 +65,6 @@ html_theme_options = {
         "json_url": "https://jupyterlite.github.io/sphinx-demo/switcher.json",
         "version_match": "xeus",
     },
-    "navbar_end": ["version-switcher", "navbar-icon-links"],
+    "navbar_end": ["theme-switcher", "version-switcher", "navbar-icon-links"],
     "navbar_persistent": ["search-button"],
 }
