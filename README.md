@@ -4,7 +4,7 @@ This repository showcases JupyterLite deployed as a static site on GitHub Pages 
 
 For similar demos that deploy JupyterLite as a standalone site instead, please check out the following:
 
-- https://github.com/jupyterlite/demo for a deployment that uses the Pyodide kernel (`jupyterlite-pyodide-kernel`).
+- [the JupyterLite demo](https://github.com/jupyterlite/demo) for a deployment that uses the Pyodide kernel (`jupyterlite-pyodide-kernel`).
 - [the JupyterLite Xeus demo](https://github.com/jupyterlite/xeus-lite-demo/) for a deployment that uses the Xeus kernel (via `jupyterlite-xeus` and `xeus-python`).
 
 ## ✨ Try it in your browser ✨

@@ -3,14 +3,14 @@
 % You can adapt this file completely to your liking, but it should at least
 % contain the root `toctree` directive.
 
-# jupyterlite-sphinx-demo documentation
+# `jupyterlite-sphinx-demo` documentation
 
 Add your content using `reStructuredText` syntax. See the
 [reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
 documentation for details.
 
 ```{toctree}
-:caption: 'Contents:'
+:caption: 'Contents'
 :maxdepth: 1
 
 custom_contents/matplotlib_demo.md
