@@ -60,6 +60,7 @@ flowchart TD
 
 For information on how to use and configure JupyterLite and `jupyterlite-sphinx` further, please refer to [the JupyterLite documentation](https://jupyterlite.readthedocs.io/) and [the `jupyterlite-sphinx` documentation](https://jupyterlite-sphinx.rtfd.io/) respectively.
 
+- Getting started: https://jupyterlite.readthedocs.io/en/stable/quickstart/index.html
 - How-to guides: https://jupyterlite.readthedocs.io/en/stable/howto/index.html
 - Reference: https://jupyterlite.readthedocs.io/en/stable/reference/index.html
 
