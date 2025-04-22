@@ -1,6 +1,7 @@
 # The name of the environment that is set up during the docs build process.
 # This doesn't matter much, as the environment is not used for anything
 # other than the installation of the packages that have been listed here.
+# For examples, visit: https://github.com/jupyterlite/xeus-lite-demo#-how-to-install-kernels-and-packages
 name: jupyterlite-wasm-env
 channels:
   # The emscripten-forge channel is used for wasm32-unknown-emscripten packages, which
