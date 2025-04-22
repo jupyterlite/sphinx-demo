@@ -3,11 +3,11 @@
 % You can adapt this file completely to your liking, but it should at least
 % contain the root `toctree` directive.
 
-# `jupyterlite-sphinx-demo` documentation
+# `jupyterlite-sphinx-demo`
 
-Add your content using `reStructuredText` syntax. See the
-[reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
-documentation for details.
+This website provides an end-to-end demo of the `jupyterlite-sphinx` extension, which allows you to integrate a JupyterLite deployment as a part of a Sphinx documentation website. It is meant to be used as a reference for documentation website authors who want to add interactive documentation elements to their Sphinx sites. This demo uses the Pyodide kernel; for a demo using the Xeus kernel, please switch to the `xeus` site using the selector dropdown in the navigation bar.
+
+The demo has been organised into the following sections, each of which demonstrates a different feature of the Sphinx extension:
 
 ```{toctree}
 :caption: 'Contents'
