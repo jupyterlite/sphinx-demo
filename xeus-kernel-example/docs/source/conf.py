@@ -67,4 +67,8 @@ html_theme_options = {
     },
     "navbar_end": ["theme-switcher", "version-switcher", "navbar-icon-links"],
     "navbar_persistent": ["search-button"],
+    "secondary_sidebar_items": {
+        "**": ["page-toc", "sourcelink"],
+        "index": ["page-toc"],
+    },
 }
