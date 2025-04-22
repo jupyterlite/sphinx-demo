@@ -43,6 +43,7 @@ html_theme = "pydata_sphinx_theme"
 html_logo = "_static/icon.svg"
 html_static_path = ["_static"]
 html_css_files = ["button_styling.css"]
+html_js_files = ["pypi.js"]
 
 # -- Options for the PyData Sphinx theme -------------------------------------
 
@@ -57,6 +58,7 @@ html_theme_options = {
             "name": "PyPI",
             "url": "https://pypi.org/project/jupyterlite-sphinx",
             "icon": "fa-custom fa-pypi",
+            "type": "fontawesome",
         },
     ],
     "switcher": {
