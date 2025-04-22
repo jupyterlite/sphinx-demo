@@ -67,8 +67,17 @@ html_theme_options = {
     },
     "navbar_end": ["theme-switcher", "version-switcher", "navbar-icon-links"],
     "navbar_persistent": ["search-button"],
+    "use_edit_page_button": True,
     "secondary_sidebar_items": {
-        "**": ["page-toc", "sourcelink"],
+        "**": ["page-toc", "sourcelink", "edit-this-page"],
         "index": ["page-toc"],
     },
+}
+
+html_context = {
+    "github_url": "https://github.com",
+    "github_user": "jupyterlite",
+    "github_repo": "sphinx-demo",
+    "github_version": "main",
+    "doc_path": "xeus-kernel-example/docs/source/",
 }
