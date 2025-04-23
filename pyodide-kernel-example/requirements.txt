@@ -16,3 +16,6 @@ myst-nb
 
 # Dependencies we require for notebook execution
 matplotlib
+
+# Dependencies we require for API reference generation
+numpydoc
