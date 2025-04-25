@@ -14,7 +14,17 @@ release = "1.0.0"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_nb", "jupyterlite_sphinx"]
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.doctest",
+    "jupyterlite_sphinx",
+    "sphinx_design",
+    "myst_nb",
+    "numpydoc",
+]
+
 
 templates_path = ["_templates"]
 exclude_patterns = []
