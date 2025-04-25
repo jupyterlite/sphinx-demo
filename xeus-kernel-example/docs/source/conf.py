@@ -6,6 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import os
+import sys
+
+
 project = "jupyterlite-sphinx-demo"
 copyright = "2025, JupyterLite Contributors"
 author = "JupyterLite Contributors"
@@ -25,6 +29,9 @@ extensions = [
     "numpydoc",
 ]
 
+# To be able to import example.py and disabled_examples/disabled_example.py here
+sys.path.insert(0, os.path.abspath("."))
+sys.path.insert(0, os.path.abspath("disabled_examples"))
 
 templates_path = ["_templates"]
 exclude_patterns = []
