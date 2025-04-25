@@ -9,6 +9,7 @@ This folder is a JupyterLite deployment with a Sphinx site using the Xeus loader
 - `docs/source/jupyter_lite_config.json`: a JupyterLite configuration file that allows configuring JupyterLite at build time.
 - `docs/source/jupyter-lite.json`: a JupyterLite configuration file for runtime configuration
 - `docs/source/overrides.json`: a JupyterLite configuration file to configure plugins and other extensions for JupyterLite.
+- `docs/source/try_examples.json`: a JupyterLite configuration file to configure the `TryExamples` directive and buttons; see https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/try_examples.html#try-examples-json-configuration-file
 - `docs/source/environment.yml`: the environment file that is used install the in-browser dependencies for the kernel at the time of building the JupyterLite deployment within the Sphinx build process.
 - `docs/source/_static/button_styling.css`: a CSS file to style the buttons added by `jupyterlite-sphinx` in the Sphinx documentation website. This is where you can add your own CSS and style the buttons to match your Sphinx theme. We provide a sample CSS file that fits the PyData Sphinx theme's default colour scheme.
 - `requirements.txt`: the main requirements file. This is where you can specify the dependencies for your Sphinx documentation website.
