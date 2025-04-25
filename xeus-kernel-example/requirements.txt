@@ -8,6 +8,8 @@ jupyterlite-sphinx
 # for more information.
 jupyterlite-xeus
 
+###############################################################################
+
 # The Sphinx documentation framework and our theme of choice: the PyData Sphinx Theme
 sphinx
 pydata-sphinx-theme
@@ -17,6 +19,12 @@ myst-nb
 
 # Dependencies we require for notebook execution
 matplotlib
+numpy
+scikit-image
+scipy
 
 # Dependencies we require for API reference generation
 numpydoc
+
+# Other Sphinx extensions
+sphinx-design
