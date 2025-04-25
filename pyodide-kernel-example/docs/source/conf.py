@@ -49,6 +49,25 @@ jupyterlite_silence = True
 # Strip out the JupyterLite contents from the output HTML files
 strip_tagged_cells = True
 
+# The global_enable_try_examples configuration option inserts the directives
+# to all "Examples" processed by numpydoc or sphinx.ext.napoleon.
+global_enable_try_examples = True
+
+# The global_button_text configuration option sets the button text for all
+# buttons, and can be overridden in individual TryExamples buttons as well.
+try_examples_global_button_text = "Try it online"
+
+# Considering the experimental nature of the TryExamples feature, this option
+# allows setting a warning message to be displayed as a cell at the top of
+# all interactive examples. This message can be written in Markdown.
+try_examples_global_warning_text = (
+    "This interactive example is experimental. Please report any issues "
+    "you may find to the JupyterLite team via "
+    "[the issue tracker](https://github.com/jupyterlite/sphinx-demo/issues/new). "
+    "Thank you!"
+)
+
+
 # -- Options for MyST-NB -----------------------------------------------------
 
 nb_execution_mode = "auto"
