@@ -22,6 +22,7 @@ matplotlib
 numpy
 scikit-image
 scipy
+pandas
 
 # Dependencies we require for API reference generation
 numpydoc
