@@ -1,14 +1,10 @@
-"""Even though the docstrings in this module contain proper Examples sections in the
-NumPy style format, no TryExamples buttons will be displayed, as this page is
+"""Even though the docstrings in the function below contain Examples sections in
+the NumPy style format, no TryExamples buttons will be displayed, as this page is
 included in the ignore_patterns list in try_examples.json.
 """
 
 def square_number(x):
     """Return the square of a number.
-
-    This simple function demonstrates that even basic examples
-    don't show TryExamples buttons when the page is disabled
-    via try_examples.json.
 
     Parameters
     ----------
