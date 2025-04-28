@@ -1,6 +1,6 @@
 
 # jupyterlite-sphinx brings jupyterlite-core and JupyterLite-specific dependencies.
-jupyterlite-sphinx
+jupyterlite-sphinx>=0.20.0
 
 # The Pyodide kernel version controls the Pyodide version as a part of the interactive
 # documentation deployment. Please refer to the Compatibility section at

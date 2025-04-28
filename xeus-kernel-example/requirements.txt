@@ -1,6 +1,6 @@
 
 # jupyterlite-sphinx brings jupyterlite-core and JupyterLite-specific dependencies.
-jupyterlite-sphinx
+jupyterlite-sphinx>=0.20.0
 
 # The Xeus kernel is a loader for various JupyterLite-compatible kernels for several
 # languages. Kernels and additional dependencies are loaded from an environment.yml
