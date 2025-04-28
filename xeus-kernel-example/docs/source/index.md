@@ -16,4 +16,5 @@ The demo has been organised into the following sections, each of which demonstra
 :maxdepth: 1
 
 custom_contents/matplotlib_demo.md
+apiref.md
 ```

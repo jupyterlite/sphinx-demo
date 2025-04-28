@@ -37,7 +37,11 @@ so that it won't be included in the JupyterLite deployment.
 
 +++
 
-# Matplotlib interactive demo
+# Notebook-based interactive example
+
+This is an example page to demonstrate how `jupyterlite-sphinx` can be used to create buttons (as noted above) that open a JupyterLite deployment based on Sphinx documentation pages where either the [`.. jupyterlite::`](https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/jupyterlite.html) or the [`.. notebooklite::`](https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/notebooklite.html) directives are used. Here, we use a [MyST Markdown notebook](https://myst-nb.readthedocs.io/en/v0.9.1/use/markdown.html), however, traditional notebooks based on the `.ipynb` file format are also supported.
+
+## Matplotlib interactive demo
 
 ## Plotting in JupyterLite
 

@@ -6,6 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import os
+import sys
+
+
 project = "jupyterlite-sphinx-demo"
 copyright = "2025, JupyterLite Contributors"
 author = "JupyterLite Contributors"
@@ -14,7 +18,20 @@ release = "1.0.0"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_nb", "jupyterlite_sphinx"]
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.doctest",
+    "jupyterlite_sphinx",
+    "sphinx_design",
+    "myst_nb",
+    "numpydoc",
+]
+
+# To be able to import example.py and disabled_examples/disabled_example.py here
+sys.path.insert(0, os.path.abspath("."))
+sys.path.insert(0, os.path.abspath("disabled_examples"))
 
 templates_path = ["_templates"]
 exclude_patterns = []
@@ -31,6 +48,25 @@ jupyterlite_silence = True
 
 # Strip out the JupyterLite contents from the output HTML files
 strip_tagged_cells = True
+
+# The global_enable_try_examples configuration option inserts the directives
+# to all "Examples" processed by numpydoc or sphinx.ext.napoleon.
+global_enable_try_examples = True
+
+# The global_button_text configuration option sets the button text for all
+# buttons, and can be overridden in individual TryExamples buttons as well.
+try_examples_global_button_text = "Try it online"
+
+# Considering the experimental nature of the TryExamples feature, this option
+# allows setting a warning message to be displayed as a cell at the top of
+# all interactive examples. This message can be written in Markdown.
+try_examples_global_warning_text = (
+    "This interactive example is experimental. Please report any issues "
+    "you may find to the JupyterLite team via "
+    "[the issue tracker](https://github.com/jupyterlite/sphinx-demo/issues/new). "
+    "Thank you!"
+)
+
 
 # -- Options for MyST-NB -----------------------------------------------------
 
