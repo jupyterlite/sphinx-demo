@@ -259,7 +259,7 @@ def image_processing(image):
     """Process an image with various transformations.
 
     This function has the TryExamples button explicitly disabled using
-    the '..! disable_try_examples' comment at the beginning of the
+    the `.. disable_try_examples` comment at the beginning of the
     Examples section.
 
     Parameters
@@ -275,7 +275,7 @@ def image_processing(image):
     Examples
     --------
 
-    ..! disable_try_examples
+    .. disable_try_examples
 
     Generate and process synthetic images:
 

@@ -12,7 +12,7 @@ Please refer to the [`TryExamples` directive documentation](https://jupyterlite-
 
 2. **Mathematical equations** – The `solve_pendulum_ode()` function below shows how mathematical equations inside the "Examples" section are rendered with MathJax.
 
-3. **Disabling the buttons** – The `image_processing()` function's docstring below contains the `..! disable_try_examples` comment, which disables the automatic insertion of the directive/buttons. This is useful for methods that are not intended to be executed interactively or for those that may not work well in a notebook environment.
+3. **Disabling the buttons** – The `image_processing()` function's docstring below contains the `.. disable_try_examples` comment, which disables the automatic insertion of the directive/buttons. This is useful for methods that are not intended to be executed interactively or for those that may not work well in a notebook environment.
 
 4. **[The `try_examples.json` configuration file](https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/try_examples.html#try-examples-json-configuration-file)** – this file has been provided in the source directory, where we've set:
    - a minimum global height for the examples to ensure that the notebooks for examples use a minimum amount of space if the examples sections are small in length.
