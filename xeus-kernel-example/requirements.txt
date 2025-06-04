@@ -4,8 +4,12 @@ jupyterlite-sphinx>=0.20.0
 
 # The Xeus kernel is a loader for various JupyterLite-compatible kernels for several
 # languages. Kernels and additional dependencies are loaded from an environment.yml
-# file, which is included in the docs/ folder. See https://jupyterlite-xeus.readthedocs.io/en/stable/
-# for more information.
+# file, which is included in the docs/ folder. For more information, see the docs at
+# https://jupyterlite-xeus.readthedocs.io/en/stable.
+# It requires micromamba for solving WASM environments, which has to be installed
+# on the system separately of this requirements file. This is not required for
+# conda-based development environment setups, as micromamba is a dependency of
+# the jupyterlite-xeus conda package and will be installed automatically.
 jupyterlite-xeus
 
 ###############################################################################
