@@ -38,10 +38,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Set up Python
-        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+      - name: Set up uv
+        uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb # v6.1.0
         with:
           python-version: "3.12"
+          activate-environment: true
 
       - name: Install micromamba for Xeus kernel example site
         uses: mamba-org/setup-micromamba@0dea6379afdaffa5d528b3d1dabc45da37f443fc # v2.0.4
@@ -49,9 +50,9 @@ jobs:
 
       - name: Install dependencies
         working-directory: ${{ matrix.site[0] }}
-        run: pip install -r requirements.txt
+        run: uv pip install -r requirements.txt
 
-      - name: Build Sphinx {{ matrix.site[0] }} site
+      - name: Build Sphinx site for ${{ matrix.site[0] }}
         working-directory: ${{ matrix.site[0] }}/docs
         run: make html
 
