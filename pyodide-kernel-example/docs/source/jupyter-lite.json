@@ -3,8 +3,6 @@
   "jupyter-config-data": {
     "appName": "jupyterlite-sphinx-demo (Pyodide)",
     "defaultKernelName": "python",
-    "faviconUrl": "./lab/favicon.ico",
-    "contentsStorageName": "jupyterlite-sphinx-demo (Pyodide)",
-    "settingsStorageName": "jupyterlite-sphinx-demo (Pyodide)"
+    "faviconUrl": "./lab/favicon.ico"
   }
 }
