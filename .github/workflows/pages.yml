@@ -25,6 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    defaults:
+      run:
+        shell: bash
     strategy:
       fail-fast: false
       matrix:
@@ -40,11 +43,15 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install micromamba for Xeus kernel example site
+        uses: mamba-org/setup-micromamba@0dea6379afdaffa5d528b3d1dabc45da37f443fc # v2.0.4
+        if: matrix.site[0] == 'xeus-kernel-example'
+
       - name: Install dependencies
         working-directory: ${{ matrix.site[0] }}
         run: pip install -r requirements.txt
 
-      - name: Build Sphinx site
+      - name: Build Sphinx {{ matrix.site[0] }} site
         working-directory: ${{ matrix.site[0] }}/docs
         run: make html
 
