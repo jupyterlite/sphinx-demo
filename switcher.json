@@ -1,0 +1,12 @@
+[
+  {
+    "name": "pyodide",
+    "version": "pyodide",
+    "url": "https://jupyterlite.github.io/sphinx-demo/pyodide/"
+  },
+  {
+    "name": "xeus",
+    "version": "xeus",
+    "url": "https://jupyterlite.github.io/sphinx-demo/xeus/"
+  }
+]
